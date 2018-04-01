@@ -1,0 +1,162 @@
+\documentclass{article}
+
+\usepackage{ctex}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{fontspec}
+\usepackage{geometry}
+
+\geometry{a4paper,scale=0.8}
+\newfontfamily\Monaco{Monaco}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},     % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize\Monaco,   % the size of the fonts that are used for the code
+  breakatwhitespace=false,         	 % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 	 % sets automatic line breaking
+  captionpos=top,              
+  columns=flexible, texcl,      
+  commentstyle=\color{mygreen},    	 % comment style
+  deletekeywords={...},            	 % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          	 % if you want to add LaTeX within your code
+  frame=single,	                   	 % adds a frame around the code
+  keepspaces=true,                 	 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       	 % keyword style
+  language=C++,                 	 % the language of the code
+  morekeywords={*,...},            	 % if you want to add more keywords to the set
+  numbers=left,                    	 % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   	 % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, 	 % the style that is used for the line-numbers
+  rulecolor=\color{black},         	 % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                	 % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          	 % underline spaces within strings only
+  showtabs=false,                  	 % show tabs within strings adding particular underscores
+  stepnumber=1,                    	 % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     	 % string literal style
+  tabsize=4,	                   	 % sets default tabsize to 4 spaces
+  title=\lstname                   	 % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\title{省选模板}
+\author{panda\_2134}
+\date{\today}
+
+\begin{document}
+
+	\makeatletter
+	\lst@CCPutMacro
+    	\lst@ProcessOther {"2D}{\lst@ttfamily{-{}}{-}}
+    	\@empty\z@\@empty
+	\makeatother
+
+	\maketitle
+	\newpage
+	\tableofcontents
+	\newpage
+
+	\section{图论}
+		\subsection{强连通分量}
+		\subsection{桥和割点}
+		\subsection{点双连通分量}
+		\subsection{边双连通分量}
+
+	\newpage
+
+	\section{网络流}
+		\subsection{最大流}
+		\lstinputlisting{NetworkFlow/MaximumFlow.cpp}
+
+	\subsection{最小费用最大流}
+
+	\newpage
+
+	\section{树}
+		\subsection{倍增LCA}
+		\lstinputlisting{Tree/DoublingLCA.cpp}
+		\subsection{欧拉序列求LCA}
+		\lstinputlisting{Tree/EulerTourLCA.cpp}
+		\subsection{树链剖分}
+		\lstinputlisting{Tree/HLD.cpp}
+		\subsection{点分治}
+
+	\newpage
+
+	% Data Structure
+	\section{单调数据结构}
+		\subsection{单调队列(滑动窗口)}
+		\lstinputlisting{Monotonic/SlidingWindow.cpp}
+		\subsection{单调栈}
+
+	\newpage
+
+	\section{线段树}
+		\subsection{Lazy-Tag} % [SDOI2017] 相关分析
+
+		\subsection{动态开点线段树}
+
+		\subsection{可持久化线段树}
+
+	\section{离线二维数点}
+		\subsection{带修改}
+			\subsubsection{静态：线段树+扫描线}
+			\subsubsection{动态：CDQ分治}
+	\section{在线二维数点}
+		\subsubsection{动态：二维线段树}
+		时间复杂度 $\text{插入} O(\lg^2 n) - \text{查询} O(\lg n)$
+		空间复杂度 $O(n^2)$
+		\subsubsection{动态：树状数组套动态开点线段树}
+		\subsubsection{动态：树状数组套平衡树}
+	\newpage
+
+	\section{平衡树}
+		\subsection{Treap}
+		\subsection{Splay}
+
+	\newpage
+
+	\section{动态树}
+		\subsection{Link-cut Tree}
+
+	\newpage
+
+	\section{字符串}
+		\subsection{KMP字符串匹配}
+		1-indexed
+		% To Be Done
+		\subsection{AC自动机}
+		0-indexed
+		\lstinputlisting{String/ACAutomaton.cpp}
+		\subsection{后缀数组}
+		0-indexed
+		\lstinputlisting{String/SuffixArray.cpp}
+
+	\newpage
+
+	\section{Miscellaneous}
+		\subsection{ST表}
+		\subsection{Fenwick Tree}
+		\subsection{左偏树}
+	\newpage
+
+	% Algorithm
+	\section{悬线法}
+		\subsection{Algorithm 1}
+		\subsection{Algorithm 2}
+
+	\newpage
+
+	\section{莫队}
+		\subsection{普通莫队}
+		\subsection{带修改莫队}
+
+	\newpage
+
+	\section{分块相关}
+		\subsection{分块}
+		\subsection{区间众数}
+
+\end{document}
