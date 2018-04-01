@@ -19,6 +19,7 @@ void SlideMin() {
 		printf("%d ", A[Q[Hd]]);
 	}
 }
+
 void SlideMax() {
 	Hd = 1, Tl = 0;
 	for(int i = 1; i <= k; i++) {
