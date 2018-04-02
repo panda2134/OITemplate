@@ -2,7 +2,6 @@
 using namespace std;
 
 const int MAXN = 1e6;
-
 int n, k, Hd, Tl, A[MAXN+10], Q[MAXN+10];
 
 void SlideMin() {
@@ -45,8 +44,6 @@ inline int readint() {
 int main() {
 	n = readint(); k = readint();
 	for(int i = 1; i <= n; i++) A[i] = readint();
-	SlideMin();
-	putchar(10);
-	SlideMax();
+	SlideMin(); putchar(10); SlideMax();
 	return 0;
 }

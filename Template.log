@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.2.28)  2 APR 2018 12:02
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.2.28)  2 APR 2018 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1434,24 +1434,33 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 \openout3 = `Template.toc'.
 
  [3] (./GraphTheory/TarjanSCC.cpp [4] [5]) [6]
-(./NetworkFlow/MaximumFlow.cpp [7]) (./NetworkFlow/zkw.cpp [8] [9])
-(./NetworkFlow/PrimalDual.cpp [10] [11]) [12] (./Tree/DoublingLCA.cpp [13])
-(./Tree/EulerTourLCA.cpp [14]) (./Tree/HLD.cpp [15]) [16]
-(./Monotonic/SlidingWindow.cpp) [17] [18] [19] [20] [21]
-(./String/ACAutomaton.cpp [22]) [23] (./String/SuffixArray.cpp [24]) [25]
-[26] [27] [28] [29] (./Template.aux)
+
+LaTeX Font Warning: Font shape `TU/Monaco(0)/bx/n' undefined
+(Font)              using `TU/Monaco(0)/m/n' instead on input line 77.
+
+(./GraphTheory/Dijkstra-STL.cpp [7]) (./GraphTheory/Dijkstra-pb_ds.cpp [8])
+(./NetworkFlow/Dinic.cpp [9] [10]) (./NetworkFlow/zkw.cpp [11])
+(./NetworkFlow/PrimalDual.cpp [12] [13] [14]) [15] (./Tree/DoublingLCA.cpp
+[16]) (./Tree/EulerTourLCA.cpp [17]) (./Tree/HLD.cpp [18]) [19]
+(./Monotonic/SlidingWindow.cpp) [20] [21] (./SegTree/CorrelationAnalyse.cpp
+[22] [23] [24]) [25] [26] [27] [28] (./String/ACAutomaton.cpp [29]) [30]
+(./String/SuffixArray.cpp [31]) [32] [33] [34] [35] [36] (./Math/inv.cpp)
+[37] (./Template.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 21890 strings out of 493005
- 435265 string characters out of 6134596
- 830535 words of memory out of 5000000
- 25617 multiletter control sequences out of 15000+600000
- 9030 words of font info for 68 fonts, out of 8000000 for 9000
+ 22057 strings out of 493005
+ 441821 string characters out of 6134596
+ 880535 words of memory out of 5000000
+ 25776 multiletter control sequences out of 15000+600000
+ 9006 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 57i,6n,69p,10435b,1697s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,6n,69p,10435b,1600s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Template.pdf (29 pages).
+Output written on Template.pdf (37 pages).

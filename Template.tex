@@ -59,7 +59,7 @@
 	\tableofcontents
 	\newpage
 
-	\section{图论}
+	\section{图的DFS树}
 		\subsection{强连通分量}
 		
 		一有向图上每个点有非负权值，求一条路径，使得路径上点权值和最大。点和边都可以多次经过，但是权值只计入答案一次。
@@ -74,12 +74,15 @@
 	\newpage
 	\section{最短路}
 		\subsection{Dijkstra}
-			\subsubsection{$\mathtt{std::priority\_queue}$}
-			
-			\subsubsection{$\mathtt{\_ \_ gnu\_pbds::priority\_queue}$}
+			\subsubsection{Using \lstinline|std::priority\_queue|}
+			\lstinputlisting{GraphTheory/Dijkstra-STL.cpp}
+			\subsubsection{Using \lstinline|__gnu_pbds::priority_queue|}
+			使用了扩展库 \lstinline|pb_ds| 中的配对堆，自带修改堆内元素操作，速度更快。仅在允许使用STL扩展时才使用。
+			\lstinputlisting{GraphTheory/Dijkstra-pb_ds.cpp}
 	\section{网络流}
 		\subsection{最大流}
-			\lstinputlisting{NetworkFlow/MaximumFlow.cpp}
+			\subsection{Dinic}
+			\lstinputlisting{NetworkFlow/Dinic.cpp}
 
 		\subsection{最小费用最大流}
 			\subsubsection{zkw费用流}
@@ -109,7 +112,15 @@
 
 	\section{线段树}
 		\subsection{Lazy-Tag} % [SDOI2017] 相关分析
-
+			\paragraph{Solution:}
+			暴力拆开式子后（或者根据《重难点手册》的结论），发现要维护区间的 $\sum x_i$, $\sum y_i$, $\sum x_i y_i$, $\sum x_i^2$, 同时要支持区间加和区间设置为 $S+i \text{ 和 } T_j$.
+			在线段树上维护 $add_s, add_t, set_s, set_t$，然后推一推式子找出Lazy-tag更新主Tag的公式即可。
+			几个坑点：
+			\begin{enumerate}
+				\item $add_s, add_t$ 标记在下推的时候，不能赋值，要累加！！！累加！！！累加！！！
+				\item 只有 $set_s, set_t$ 用 $-1$ 来标记不存在， $add_s, add_t$ 必须用 $0$ 标记不存在！不然是给自己找麻烦，多出来各种特判！！！
+			\end{enumerate}
+			\lstinputlisting{SegTree/CorrelationAnalyse.cpp}
 		\subsection{动态开点线段树}
 
 		\subsection{可持久化线段树}
@@ -172,5 +183,25 @@
 	\section{分块相关}
 		\subsection{分块}
 		\subsection{区间众数}
+
+	\newpage
+	
+	\section{数论}
+		\subsection{线性求逆元}
+			\paragraph{推导}
+			令 $p = ki + r (0 \le r < i)$ \\
+			则 $0 \equiv ki + r \: (\text{mod } p)$ \\
+			$\Rightarrow ki \cdot i^{-1} r^{-1} + r \cdot i^{-1} r^{-1} \equiv 0$ \\
+			$\Rightarrow i^{-1} \equiv -k \cdot r^{-1} \equiv p - \left\lfloor \frac{p}{i}\right\rfloor + p \text{ mod } i \: ( \text{mod } p )$
+			
+			\lstinputlisting{Math/inv.cpp}
+		\subsection{线性筛}
+			\subsubsection{求$\varphi(n)$}
+			\subsubsection{求$\mu(n)$}
+			\subsubsection{求$d(n)$}
+		\subsection{扩展欧几里得定理}
+		\subsection{中国剩余定理}
+		\subsection{扩展欧拉定理}
+		\subsection{Lucas定理}
 
 \end{document}
