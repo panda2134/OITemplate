@@ -5,6 +5,7 @@
 \usepackage{color}
 \usepackage{fontspec}
 \usepackage{geometry}
+\usepackage{amsmath}
 
 \geometry{a4paper,scale=0.8}
 \newfontfamily\Monaco{Monaco}
@@ -41,7 +42,7 @@
   title=\lstname                   	 % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
-\title{省选模板}
+\title{OI模板}
 \author{panda\_2134}
 \date{\today}
 
@@ -60,18 +61,31 @@
 
 	\section{图论}
 		\subsection{强连通分量}
+		
+		一有向图上每个点有非负权值，求一条路径，使得路径上点权值和最大。点和边都可以多次经过，但是权值只计入答案一次。
+		
+		Solution: 缩点后直接在DAG上DP.
+		\lstinputlisting{GraphTheory/TarjanSCC.cpp}
+		
 		\subsection{桥和割点}
 		\subsection{点双连通分量}
 		\subsection{边双连通分量}
 
 	\newpage
-
+	\section{最短路}
+		\subsection{Dijkstra}
+			\subsubsection{$\mathtt{std::priority\_queue}$}
+			
+			\subsubsection{$\mathtt{\_ \_ gnu\_pbds::priority\_queue}$}
 	\section{网络流}
 		\subsection{最大流}
-		\lstinputlisting{NetworkFlow/MaximumFlow.cpp}
+			\lstinputlisting{NetworkFlow/MaximumFlow.cpp}
 
-	\subsection{最小费用最大流}
-
+		\subsection{最小费用最大流}
+			\subsubsection{zkw费用流}
+			\lstinputlisting{NetworkFlow/zkw.cpp}
+			\subsubsection{Primal Dual}
+			\lstinputlisting{NetworkFlow/PrimalDual.cpp}
 	\newpage
 
 	\section{树}
