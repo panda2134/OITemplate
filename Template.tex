@@ -107,6 +107,10 @@
 		\subsection{单调队列(滑动窗口)}
 		\lstinputlisting{Monotonic/SlidingWindow.cpp}
 		\subsection{单调栈}
+		\paragraph{\[JSOI2008\] 最大数}
+		注意：下标从栈底到顶递增，而值则递减。（一个数字前面的比它小的数肯定不会成为询问的答案）
+		还有：可能 $L = 0$，此时 \lstinline|lower_bound| 传入空区间，返回 $L$ ！ 所以必须特判！
+		\lstinputlisting{Monotinic/MaxNumber.cpp}
 
 	\newpage
 
@@ -118,7 +122,7 @@
 			几个坑点：
 			\begin{enumerate}
 				\item $add_s, add_t$ 标记在下推的时候，不能赋值，要累加！！！累加！！！累加！！！
-				\item 只有 $set_s, set_t$ 用 $-1$ 来标记不存在， $add_s, add_t$ 必须用 $0$ 标记不存在！不然是给自己找麻烦，多出来各种特判！！！
+				\item 只有 $set_s, set_t$ 用 $-\infty$ 来标记不存在， $add_s, add_t$ 必须用 $0$ 标记不存在！不然是给自己找麻烦，多出来各种特判！！！
 			\end{enumerate}
 			\lstinputlisting{SegTree/CorrelationAnalyse.cpp}
 		\subsection{动态开点线段树}
@@ -139,7 +143,9 @@
 
 	\section{平衡树}
 		\subsection{Treap}
+		\lstinputlisting{BalancedTree/Treap.cpp}
 		\subsection{Splay}
+		\lstinputlisting{BalancedTree/Splay.cpp}
 
 	\newpage
 
@@ -164,7 +170,9 @@
 	\section{Miscellaneous}
 		\subsection{ST表}
 		\subsection{Fenwick Tree}
+		\lstinputlisting{Misc/BIT.cpp}
 		\subsection{左偏树}
+		\lstinputlisting{Misc/LefiestTree.cpp}
 	\newpage
 
 	% Algorithm
@@ -182,10 +190,18 @@
 
 	\section{分块相关}
 		\subsection{分块}
+		例题：教主的魔法
+		
 		\subsection{区间众数}
 
 	\newpage
-	
+	\section{多项式}
+		（为何比别人多了4倍常数……）
+		\subsection{快速傅里叶变换}
+		\lstinputlisting{Poly/FFT.cpp}
+		\subsection{快速数论变换}
+		$998244353$ 的原根是 $3$
+		\lstinputlisting{Poly/NTT.cpp}
 	\section{数论}
 		\subsection{线性求逆元}
 			\paragraph{推导}
