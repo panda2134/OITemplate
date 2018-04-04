@@ -73,6 +73,8 @@
 
 	\newpage
 	\section{最短路}
+		\subsection{负环}
+			\lstinputlisting{GraphTheory/NegCycle.cpp}
 		\subsection{Dijkstra}
 			\subsubsection{Using \lstinline|std::priority\_queue|}
 			\lstinputlisting{GraphTheory/Dijkstra-STL.cpp}
@@ -110,7 +112,7 @@
 		\paragraph{\[JSOI2008\] 最大数}
 		注意：下标从栈底到顶递增，而值则递减。（一个数字前面的比它小的数肯定不会成为询问的答案）
 		还有：可能 $L = 0$，此时 \lstinline|lower_bound| 传入空区间，返回 $L$ ！ 所以必须特判！
-		\lstinputlisting{Monotinic/MaxNumber.cpp}
+		\lstinputlisting{Monotonic/MaxNumber.cpp}
 
 	\newpage
 
@@ -126,13 +128,21 @@
 			\end{enumerate}
 			\lstinputlisting{SegTree/CorrelationAnalyse.cpp}
 		\subsection{动态开点线段树}
-
+		
 		\subsection{可持久化线段树}
 
 	\section{离线二维数点}
 		\subsection{带修改}
 			\subsubsection{静态：线段树+扫描线}
 			\subsubsection{动态：CDQ分治}
+			陌上花开：三维数点 = 动态二维数点
+			
+			注意去重处理的坑点：
+			\begin{enumerate}
+				\item 在分治统计的时候，无论是加点还是查询答案，都一定要考虑到多个重复点的贡献！
+				\item 注意去重方法：用\lstinline|map|比较方便。
+			\end{enumerate}
+			\lstinputlisting{2D/cdq.cpp}
 	\section{在线二维数点}
 		\subsubsection{动态：二维线段树}
 		时间复杂度 $\text{插入} O(\lg^2 n) - \text{查询} O(\lg n)$
@@ -151,7 +161,8 @@
 
 	\section{动态树}
 		\subsection{Link-cut Tree}
-
+		(似乎发现了以前模板里面判断边是否存在的一个错误……)
+		\lstinputlisting{LCT/LCT.cpp}
 	\newpage
 
 	\section{字符串}
@@ -169,6 +180,7 @@
 
 	\section{Miscellaneous}
 		\subsection{ST表}
+		\lstinputlisting{Misc/ST.cpp}
 		\subsection{Fenwick Tree}
 		\lstinputlisting{Misc/BIT.cpp}
 		\subsection{左偏树}
@@ -176,12 +188,6 @@
 	\newpage
 
 	% Algorithm
-	\section{悬线法}
-		\subsection{Algorithm 1}
-		\subsection{Algorithm 2}
-
-	\newpage
-
 	\section{莫队}
 		\subsection{普通莫队}
 		\subsection{带修改莫队}

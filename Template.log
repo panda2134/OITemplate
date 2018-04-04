@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.2.28)  3 APR 2018 13:45
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.2.28)  4 APR 2018 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1433,21 +1433,23 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 \tf@toc=\write3
 \openout3 = `Template.toc'.
 
- [3] (./GraphTheory/TarjanSCC.cpp [4] [5]) [6]
+ [3] [4] (./GraphTheory/TarjanSCC.cpp [5] [6]) [7]
+(./GraphTheory/NegCycle.cpp [8])
 
 LaTeX Font Warning: Font shape `TU/Monaco(0)/bx/n' undefined
-(Font)              using `TU/Monaco(0)/m/n' instead on input line 77.
+(Font)              using `TU/Monaco(0)/m/n' instead on input line 79.
 
-(./GraphTheory/Dijkstra-STL.cpp [7]) (./GraphTheory/Dijkstra-pb_ds.cpp [8])
-(./NetworkFlow/Dinic.cpp [9] [10]) (./NetworkFlow/zkw.cpp [11])
-(./NetworkFlow/PrimalDual.cpp [12] [13] [14]) [15] (./Tree/DoublingLCA.cpp
-[16]) (./Tree/EulerTourLCA.cpp [17]) (./Tree/HLD.cpp [18]) [19]
-(./Monotonic/SlidingWindow.cpp) [20] [21] (./SegTree/CorrelationAnalyse.cpp
-[22] [23] [24]) [25] (./BalancedTree/Treap.cpp [26] [27])
-(./BalancedTree/Splay.cpp [28] [29]) [30] [31] (./String/ACAutomaton.cpp
-[32]) [33] (./String/SuffixArray.cpp [34]) [35] (./Misc/BIT.cpp) [36]
-(./Misc/LefiestTree.cpp [37]) [38] [39] [40] [41] (./Poly/FFT.cpp [42])
-(./Poly/NTT.cpp [43] [44]) (./Math/inv.cpp) [45] [46] (./Template.aux)
+(./GraphTheory/Dijkstra-STL.cpp [9]) (./GraphTheory/Dijkstra-pb_ds.cpp [10])
+[11] (./NetworkFlow/Dinic.cpp [12]) (./NetworkFlow/zkw.cpp [13] [14])
+(./NetworkFlow/PrimalDual.cpp [15] [16]) [17] (./Tree/DoublingLCA.cpp [18])
+(./Tree/EulerTourLCA.cpp [19]) (./Tree/HLD.cpp [20]) [21]
+(./Monotonic/SlidingWindow.cpp) [22] (./Monotonic/MaxNumber.cpp) [23]
+(./SegTree/CorrelationAnalyse.cpp [24] [25] [26]) (./2D/cdq.cpp [27] [28]
+[29]) [30] (./BalancedTree/Treap.cpp [31] [32]) (./BalancedTree/Splay.cpp
+[33] [34]) [35] (./LCT/LCT.cpp [36] [37]) [38] (./String/ACAutomaton.cpp
+[39]) [40] (./String/SuffixArray.cpp [41]) [42] (./Misc/ST.cpp) (./Misc/BIT.cpp
+[43]) (./Misc/LefiestTree.cpp [44] [45]) [46] [47] [48] (./Poly/FFT.cpp
+[49]) (./Poly/NTT.cpp [50] [51]) (./Math/inv.cpp) [52] [53] (./Template.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
@@ -1457,12 +1459,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22249 strings out of 493005
- 446960 string characters out of 6134596
- 881535 words of memory out of 5000000
- 25947 multiletter control sequences out of 15000+600000
+ 22353 strings out of 493005
+ 448581 string characters out of 6134596
+ 880535 words of memory out of 5000000
+ 26034 multiletter control sequences out of 15000+600000
  9006 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  57i,6n,69p,10435b,1600s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Template.pdf (46 pages).
+Output written on Template.pdf (53 pages).
