@@ -6,6 +6,7 @@
 \usepackage{fontspec}
 \usepackage{geometry}
 \usepackage{amsmath}
+\usepackage[colorlinks,linkcolor=black]{hyperref}
 
 \geometry{a4paper,scale=0.8}
 \newfontfamily\Monaco{Monaco}
@@ -68,9 +69,15 @@
 		\lstinputlisting{GraphTheory/TarjanSCC.cpp}
 		
 		\subsection{桥和割点}
-		\subsection{点双连通分量}
-		\subsection{边双连通分量}
+		注意child代表DFS树中的儿子数目，且只在走完DFS树中某个儿子后判断割点条件。\\
+		桥只需要把34行\lstinline|>=|改为\lstinline|>|即可。
+		\lstinputlisting{GraphTheory/CutVertex.cpp}
 
+		\subsection{点双连通分量}
+		\lstinputlisting{GraphTheory/BCCVertex.cpp}
+
+		\subsection{边双连通分量}
+		找出割边后DFS，同时避免经过割边，即可求出边双连通分量。
 	\newpage
 	\section{最短路}
 		\subsection{负环}
@@ -101,7 +108,7 @@
 		\subsection{树链剖分}
 		\lstinputlisting{Tree/HLD.cpp}
 		\subsection{点分治}
-
+		\lstinputlisting{Tree/DivConquerOnVertex.cpp}
 	\newpage
 
 	% Data Structure
@@ -109,7 +116,7 @@
 		\subsection{单调队列(滑动窗口)}
 		\lstinputlisting{Monotonic/SlidingWindow.cpp}
 		\subsection{单调栈}
-		\paragraph{\[JSOI2008\] 最大数}
+		\paragraph{[JSOI2008] 最大数}
 		注意：下标从栈底到顶递增，而值则递减。（一个数字前面的比它小的数肯定不会成为询问的答案）
 		还有：可能 $L = 0$，此时 \lstinline|lower_bound| 传入空区间，返回 $L$ ！ 所以必须特判！
 		\lstinputlisting{Monotonic/MaxNumber.cpp}
@@ -128,12 +135,17 @@
 			\end{enumerate}
 			\lstinputlisting{SegTree/CorrelationAnalyse.cpp}
 		\subsection{动态开点线段树}
-		
-		\subsection{可持久化线段树}
+			\paragraph{[P3380]二逼平衡树}
+			树状数组套动态开点线段树。
 
+			线段树一般都不写指针的，容易错……
+			\lstinputlisting{SegTree/2BBalancedTree.cpp}
+		\subsection{可持久化线段树}
+			\lstinputlisting{SegTree/LongtermSegtree.cpp}
 	\section{离线二维数点}
 		\subsection{带修改}
 			\subsubsection{静态：线段树+扫描线}
+			（未实现）
 			\subsubsection{动态：CDQ分治}
 			陌上花开：三维数点 = 动态二维数点
 			
@@ -148,7 +160,9 @@
 		时间复杂度 $\text{插入} O(\lg^2 n) - \text{查询} O(\lg n)$
 		空间复杂度 $O(n^2)$
 		\subsubsection{动态：树状数组套动态开点线段树}
+		（见上方二逼平衡树）
 		\subsubsection{动态：树状数组套平衡树}
+		\lstinputlisting{BalancedTree/DynamicInversion.cpp}
 	\newpage
 
 	\section{平衡树}
@@ -168,7 +182,7 @@
 	\section{字符串}
 		\subsection{KMP字符串匹配}
 		1-indexed
-		% To Be Done
+		\lstinputlisting{String/KMP.cpp}
 		\subsection{AC自动机}
 		0-indexed
 		\lstinputlisting{String/ACAutomaton.cpp}
@@ -190,16 +204,17 @@
 	% Algorithm
 	\section{莫队}
 		\subsection{普通莫队}
+		\lstinputlisting{MoQueue/HH.cpp}
 		\subsection{带修改莫队}
-
+		\lstinputlisting{MoQueue/Color.cpp}
 	\newpage
 
 	\section{分块相关}
 		\subsection{分块}
 		例题：教主的魔法
-		
+		\lstinputlisting{Block/Magic.cpp}
 		\subsection{区间众数}
-
+		\lstinputlisting{Block/Mode.cpp}
 	\newpage
 	\section{多项式}
 		（为何比别人多了4倍常数……）
@@ -219,11 +234,21 @@
 			\lstinputlisting{Math/inv.cpp}
 		\subsection{线性筛}
 			\subsubsection{求$\varphi(n)$}
+			\lstinputlisting{Math/phi.cpp}
 			\subsubsection{求$\mu(n)$}
+			\lstinputlisting{Math/mu.cpp}
 			\subsubsection{求$d(n)$}
+			
 		\subsection{扩展欧几里得定理}
+		\lstinputlisting{Math/exgcd.cpp}
 		\subsection{中国剩余定理}
+		\url{https://blog.csdn.net/ruoruo_cheng/article/details/52075213}
+		\lstinputlisting{Math/crt.cpp}
 		\subsection{扩展欧拉定理}
+		$$
+		a^b \equiv a^{b \text{ mod } \varphi(n) + [b \ge \varphi(n)] \cdot \varphi(n)} (\text{mod } n)
+		$$
+		\lstinputlisting{Math/exteuler.cpp}
 		\subsection{Lucas定理}
-
+		\lstinputlisting{Math/lucas.cpp}
 \end{document}
