@@ -92,7 +92,7 @@ void erase(Node* &o, int val) {
 int getrank(Node* o, int val) {
     if(o == null) return 0;
     int d = o->cmp(val);
-    if(d == -1) return o->ch[0]->sz;// ´ËÊ±rank = <valµÄÔªËØ¸öÊý 
+    if(d == -1) return o->ch[0]->sz;// !!!
     return getrank(o->ch[d], val) + d * (o->ch[0]->sz + 1);
 }
 
