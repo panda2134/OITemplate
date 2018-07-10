@@ -9,16 +9,16 @@
 \usepackage{amsmath}
 \usepackage[colorlinks,linkcolor=black]{hyperref}
 
-\geometry{a4paper,scale=0.8}
-\newfontfamily\Monaco{Monaco}
+\geometry{a4paper,scale=0.85}
+\newfontfamily\CourierNew{Courier New}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 
-\lstset{ 
+\lstset{  
   backgroundcolor=\color{white},     % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
-  basicstyle=\footnotesize\Monaco,   % the size of the fonts that are used for the code
+  basicstyle=\footnotesize\CourierNew,   % the size of the fonts that are used for the code
   breakatwhitespace=false,         	 % sets if automatic breaks should only happen at whitespace
   breaklines=true,                 	 % sets automatic line breaking
   captionpos=top,              
@@ -45,7 +45,7 @@
 }
 
 \title{OI模板}
-\author{panda\_2134}
+\author{panda\_2134\footnote{以 \href{https://www.gnu.org/licenses/agpl-3.0.txt}{AGPLv3} 授权，源码可在 \href{https://github.com/panda2134/OITemplate}{GitHub} 下载。}}
 \date{\today}
 
 
@@ -90,6 +90,12 @@
 			\subsubsection{Using \lstinline|__gnu_pbds::priority_queue|}
 			使用了扩展库 \lstinline|pb_ds| 中的配对堆，自带修改堆内元素操作，速度更快。仅在允许使用STL扩展时才使用。
 			\lstinputlisting{GraphTheory/Dijkstra-pb_ds.cpp}
+
+	\section{2-SAT}
+		\paragraph{[NOI2017]游戏}
+		爆搜后进行带输出方案的2-SAT. 注意2-SAT一定要建立反向边！！！
+		\lstinputlisting{GraphTheory/TwoSAT.cpp}
+	
 	\section{网络流}
 		\subsection{最大流}
 			\subsection{Dinic}
@@ -111,6 +117,10 @@
 		\lstinputlisting{Tree/HLD.cpp}
 		\subsection{点分治}
 		\lstinputlisting{Tree/DivConquerOnVertex.cpp}
+		\subsection{动态点分治}
+		\paragraph{[WC2014]紫荆花之恋}
+		动态点分治+平衡树+替罪羊重构
+		\lstinputlisting{Tree/DynamicDCOnVertex.cpp}
 	\newpage
 
 	% Data Structure
@@ -172,6 +182,8 @@
 		\lstinputlisting{BalancedTree/Treap.cpp}
 		\subsection{Splay}
 		\lstinputlisting{BalancedTree/Splay.cpp}
+		\subsection{可持久化平衡树}
+		\lstinputlisting{BalancedTree/PersistentTreap.cpp}
 
 	\newpage
 
@@ -182,14 +194,14 @@
 	\newpage
 
 	\section{字符串}
+		All input string(s) 0-indexed
 		\subsection{KMP字符串匹配}
-		1-indexed
 		\lstinputlisting{String/KMP.cpp}
+		\subsection{Manacher}
+		\lstinputlisting{String/Manacher.cpp}
 		\subsection{AC自动机}
-		0-indexed
 		\lstinputlisting{String/ACAutomaton.cpp}
 		\subsection{后缀数组}
-		0-indexed
 		\lstinputlisting{String/SuffixArray.cpp}
 
 	\newpage
@@ -201,6 +213,9 @@
 		\lstinputlisting{Misc/BIT.cpp}
 		\subsection{左偏树}
 		\lstinputlisting{Misc/LefiestTree.cpp}
+		\subsection{数位DP}
+		\paragraph{[ZJOI2010]数字计数}
+		\lstinputlisting{Misc/DigitDP.cpp}
 	\newpage
 
 	% Algorithm
@@ -217,7 +232,17 @@
 		\lstinputlisting{Block/Magic.cpp}
 		\subsection{区间众数}
 		\lstinputlisting{Block/Mode.cpp}
+	
 	\newpage
+
+	\section{线性代数}
+		\subsection{高斯消元}
+		\lstinputlisting{LinearAlgebra/GaussElimination.cpp}
+		\subsection{线性基}
+		\lstinputlisting{LinearAlgebra/LinearBasis.cpp}
+
+\newpage
+
 	\section{多项式}
 		（为何比别人多了4倍常数……）
 		\subsection{快速傅里叶变换}
@@ -225,6 +250,17 @@
 		\subsection{快速数论变换}
 		$998244353$ 的原根是 $3$
 		\lstinputlisting{Poly/NTT.cpp}
+		\subsection{多项式算法大全}
+		\begin{itemize}
+			\item 多项式求逆
+			\item 多项式除法
+			\item 多项式 \(\ln\)
+			\item 多项式 \(\exp\)
+		\end{itemize}
+		\lstinputlisting{Poly/AIO.cpp}
+
+\newpage
+
 	\section{数论}
 		\subsection{线性求逆元}
 			\paragraph{推导}
@@ -239,7 +275,9 @@
 			\lstinputlisting{Math/phi.cpp}
 			\subsubsection{求$\mu(n)$}
 			\lstinputlisting{Math/mu.cpp}
-		
+			\subsubsection{求\(\sigma(n)\)}
+			\url{https://blog.csdn.net/ControlBear/article/details/77527115}
+			\lstinputlisting{Math/sigma.cpp}
 		\subsection{扩展欧几里得定理}
 		\lstinputlisting{Math/exgcd.cpp}
 		\subsection{中国剩余定理}
@@ -247,9 +285,11 @@
 		\lstinputlisting{Math/crt.cpp}
 		\subsection{扩展欧拉定理}
 		$$
-		a^b \equiv a^{b \text{ mod } \varphi(n) + [b \ge \varphi(n)] \cdot \varphi(n)} (\text{mod } n)
+		a^b \equiv a^{b \mod \varphi(n) + [b \ge \varphi(n)] \cdot \varphi(n)} \pmod{n}
 		$$
 		\lstinputlisting{Math/exteuler.cpp}
 		\subsection{Lucas定理}
 		\lstinputlisting{Math/lucas.cpp}
+		\subsection{大步小步算法}
+		\lstinputlisting{Math/bsgs.cpp}
 \end{document}

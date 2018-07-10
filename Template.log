@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.2.23)  15 MAY 2018 21:12
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.2.23)  10 JUL 2018 17:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1414,36 +1414,26 @@ tly
 )
 \Hy@SectionHShift=\skip63
 )
-.................................................
-. fontspec info: "no-scripts"
-. 
-. Font "Monaco" does not contain any OpenType `Script' information.
-.................................................
-\g__fontspec_family_Monaco_int=\count184
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font "Monaco/BI" (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font "Monaco/B" (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font "Monaco/I" (it probably doesn't exist).
-.................................................
+\g__fontspec_family_CourierNew_int=\count184
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'Monaco(0)' created for font 'Monaco' with options [].
+. Font family 'CourierNew(0)' created for font 'Courier New' with options [].
 .  
 .  This font family consists of the following NFSS series/shapes:
 .  
-. - 'normal' (m/n) with NFSS spec.: <->"Monaco/OT"
+. - 'normal' (m/n) with NFSS spec.: <->"Courier
+. New/OT:script=latn;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.: <->"Courier
+. New/B/OT:script=latn;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'italic' (m/it) with NFSS spec.: <->"Courier
+. New/I/OT:script=latn;language=DFLT;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.: <->"Courier
+. New/BI/OT:script=latn;language=DFLT;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 .................................................
 
 (d:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1559,15 +1549,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(59.74988pt, 478.00812pt, 59.74988pt)
-* v-part:(T,H,B)=(67.60269pt, 676.04005pt, 101.4041pt)
+* h-part:(L,W,R)=(44.81126pt, 507.88533pt, 44.81128pt)
+* v-part:(T,H,B)=(50.70074pt, 718.29497pt, 76.05113pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=478.00812pt
-* \textheight=676.04005pt
-* \oddsidemargin=-12.52011pt
-* \evensidemargin=-12.52011pt
-* \topmargin=-41.6673pt
+* \textwidth=507.88533pt
+* \textheight=718.29497pt
+* \oddsidemargin=-27.45872pt
+* \evensidemargin=-27.45872pt
+* \topmargin=-58.56924pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -1610,17 +1600,13 @@ LaTeX Info: Redefining \nameref on input line 52.
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 2.
 
-[2])
+[2] [3])
 \tf@toc=\write4
 \openout4 = `Template.toc'.
 
- [3] (./GraphTheory/TarjanSCC.cpp [4] [5]) (./GraphTheory/CutVertex.cpp
-[6]) (./GraphTheory/BCCVertex.cpp [7] [8]) [9] [10] (./GraphTheory/NegCycle.cpp
+ [4] (./GraphTheory/TarjanSCC.cpp [5] [6]) (./GraphTheory/CutVertex.cpp [7]) (.
+/GraphTheory/BCCVertex.cpp [8] [9]) [10] (./GraphTheory/NegCycle.cpp
 [11])
-
-LaTeX Font Warning: Font shape `TU/Monaco(0)/bx/n' undefined
-(Font)              using `TU/Monaco(0)/m/n' instead on input line 88.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\lstinline' on input line 88.
@@ -1646,52 +1632,68 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 90.
 
-(./GraphTheory/Dijkstra-pb_ds.cpp [13]) [14] (./NetworkFlow/Dinic.cpp [15])
-(./NetworkFlow/zkw.cpp [16] [17]) (./NetworkFlow/PrimalDual.cpp [18] [19])
-[20] (./Tree/DoublingLCA.cpp [21]) (./Tree/EulerTourLCA.cpp [22])
-(./Tree/HLD.cpp [23]) (./Tree/DivConquerOnVertex.cpp [24] [25]) [26]
-(./Monotonic/SlidingWindow.cpp) [27] (./Monotonic/MaxNumber.cpp) [28]
-(./SegTree/CorrelationAnalyse.cpp [29] [30] [31]) (./SegTree/2BBalancedTree.cpp
-[32] [33] [34] [35]) (./SegTree/LongtermSegtree.cpp [36]) [37] (./2D/cdq.cpp
-[38] [39])
+(./GraphTheory/Dijkstra-pb_ds.cpp [13]) (./GraphTheory/TwoSAT.cpp [14] [15]
+[16] [17]) (./NetworkFlow/Dinic.cpp [18]) (./NetworkFlow/zkw.cpp [19]) [20]
+(./NetworkFlow/PrimalDual.cpp [21] [22]) [23] (./Tree/DoublingLCA.cpp [24])
+(./Tree/EulerTourLCA.cpp [25]) (./Tree/HLD.cpp [26])
+(./Tree/DivConquerOnVertex.cpp [27] [28]) (./Tree/DynamicDCOnVertex.cpp
+[29] [30] [31] [32]) [33] (./Monotonic/SlidingWindow.cpp) [34]
+(./Monotonic/MaxNumber.cpp) [35] (./SegTree/CorrelationAnalyse.cpp [36]
+[37] [38]) (./SegTree/2BBalancedTree.cpp [39] [40] [41])
+(./SegTree/LongtermSegtree.cpp [42] [43]) (./2D/cdq.cpp [44] [45])
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 161.
+(hyperref)                than one, level fixed on input line 171.
 
-(./BalancedTree/DynamicInversion.cpp [40] [41] [42]) [43]
-(./BalancedTree/Treap.cpp [44] [45]) (./BalancedTree/Splay.cpp [46] [47])
-[48] (./LCT/LCT.cpp [49] [50]) [51] (./String/KMP.cpp)
-(./String/ACAutomaton.cpp [52] [53]) (./String/SuffixArray.cpp [54] [55])
-[56] (./Misc/ST.cpp) (./Misc/BIT.cpp [57]) (./Misc/LefiestTree.cpp [58]
-[59]) [60] (./MoQueue/HH.cpp [61]) (./MoQueue/Color.cpp [62] [63]) [64]
-(./Block/Magic.cpp [65]) (./Block/Mode.cpp [66] [67]) [68] (./Poly/FFT.cpp
-[69]) (./Poly/NTT.cpp [70] [71]) (./Math/inv.cpp)
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 238.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\varphi' on input line 238.
-
+(./BalancedTree/DynamicInversion.cpp [46] [47] [48]) [49]
+(./BalancedTree/Treap.cpp [50] [51]) (./BalancedTree/Splay.cpp [52] [53])
+(./BalancedTree/PersistentTreap.cpp [54] [55] [56]) [57] (./LCT/LCT.cpp
+[58] [59]) [60] (./String/KMP.cpp) (./String/Manacher.cpp [61])
+(./String/ACAutomaton.cpp [62] [63]) (./String/SuffixArray.cpp [64]) [65]
+(./Misc/ST.cpp) (./Misc/BIT.cpp [66]) (./Misc/LefiestTree.cpp [67] [68])
+(./Misc/DigitDP.cpp [69] [70]) [71] (./MoQueue/HH.cpp [72])
+(./MoQueue/Color.cpp [73] [74]) [75] (./Block/Magic.cpp [76]) (./Block/Mode.cpp
+[77] [78]) [79] (./LinearAlgebra/GaussElimination.cpp)
+(./LinearAlgebra/LinearBasis.cpp) [80] (./Poly/FFT.cpp [81]) (./Poly/NTT.cpp
+[82] [83]) (./Poly/AIO.cpp [84] [85] [86]) [87] (./Math/inv.cpp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 238.
-
-(./Math/phi.cpp [72])
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 274.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 240.
+(hyperref)                removing `\varphi' on input line 274.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 274.
 
-(./Math/mu.cpp) [73] (./Math/exgcd.cpp)
+(./Math/phi.cpp) [88]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 276.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mu' on input line 276.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 276.
+
+(./Math/mu.cpp)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\(' on input line 278.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sigma' on input line 278.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\)' on input line 278.
+
 \g__fontspec_family_FangSong_int=\count189
 .................................................
 . fontspec info: "no-font-shape"
@@ -1720,31 +1722,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 . <->"FangSong/OT:script=hani;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
- (./Math/crt.cpp) [74]
-(./Math/exteuler.cpp) (./Math/lucas.cpp [75])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
- [76]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
- (./Template.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 255.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 255.
+(./Math/sigma.cpp) [89] (./Math/exgcd.cpp) (./Math/crt.cpp) [90]
+(./Math/exteuler.cpp) (./Math/lucas.cpp [91]) (./Math/bsgs.cpp [92])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
+ [93]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
+
+(./Template.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 295.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 295.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 255.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 295.
  ) 
 Here is how much of TeX's memory you used:
- 28699 strings out of 493005
- 539926 string characters out of 6137956
- 982967 words of memory out of 5000000
- 32258 multiletter control sequences out of 15000+600000
- 9398 words of font info for 70 fonts, out of 8000000 for 9000
+ 28985 strings out of 493005
+ 544373 string characters out of 6137956
+ 1048361 words of memory out of 5000000
+ 32504 multiletter control sequences out of 15000+600000
+ 10573 words of font info for 78 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 57i,6n,68p,10464b,1753s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,11n,68p,10464b,1751s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Template.pdf (76 pages).
+Output written on Template.pdf (93 pages).

@@ -1,71 +1,85 @@
-\contentsline {section}{\numberline {1}图的DFS树}{4}{section.1}
-\contentsline {subsection}{\numberline {1.1}强连通分量}{4}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}桥和割点}{6}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}点双连通分量}{7}{subsection.1.3}
+\contentsline {section}{\numberline {1}图的DFS树}{5}{section.1}
+\contentsline {subsection}{\numberline {1.1}强连通分量}{5}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}桥和割点}{7}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}点双连通分量}{8}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}边双连通分量}{10}{subsection.1.4}
 \contentsline {section}{\numberline {2}最短路}{11}{section.2}
 \contentsline {subsection}{\numberline {2.1}负环}{11}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Dijkstra}{12}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Using \lstinline |std::priority\_queue|}{12}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Using \lstinline |__gnu_pbds::priority_queue|}{13}{subsubsection.2.2.2}
-\contentsline {section}{\numberline {3}网络流}{15}{section.3}
-\contentsline {subsection}{\numberline {3.1}最大流}{15}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Dinic}{15}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}最小费用最大流}{16}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}zkw费用流}{16}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Primal Dual}{18}{subsubsection.3.3.2}
-\contentsline {section}{\numberline {4}树}{21}{section.4}
-\contentsline {subsection}{\numberline {4.1}倍增LCA}{21}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}欧拉序列求LCA}{22}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}树链剖分}{23}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}点分治}{24}{subsection.4.4}
-\contentsline {section}{\numberline {5}单调数据结构}{27}{section.5}
-\contentsline {subsection}{\numberline {5.1}单调队列(滑动窗口)}{27}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}单调栈}{28}{subsection.5.2}
-\contentsline {paragraph}{[JSOI2008] 最大数}{28}{section*.2}
-\contentsline {section}{\numberline {6}线段树}{29}{section.6}
-\contentsline {subsection}{\numberline {6.1}Lazy-Tag}{29}{subsection.6.1}
-\contentsline {paragraph}{Solution:}{29}{section*.3}
-\contentsline {subsection}{\numberline {6.2}动态开点线段树}{32}{subsection.6.2}
-\contentsline {paragraph}{[P3380]二逼平衡树}{32}{section*.4}
-\contentsline {subsection}{\numberline {6.3}可持久化线段树}{36}{subsection.6.3}
-\contentsline {section}{\numberline {7}离线二维数点}{37}{section.7}
-\contentsline {subsection}{\numberline {7.1}带修改}{37}{subsection.7.1}
-\contentsline {subsubsection}{\numberline {7.1.1}静态：线段树+扫描线}{37}{subsubsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.2}动态：CDQ分治}{37}{subsubsection.7.1.2}
-\contentsline {section}{\numberline {8}在线二维数点}{40}{section.8}
-\contentsline {subsubsection}{\numberline {8.0.1}动态：二维线段树}{40}{subsubsection.8.0.1}
-\contentsline {subsubsection}{\numberline {8.0.2}动态：树状数组套动态开点线段树}{40}{subsubsection.8.0.2}
-\contentsline {subsubsection}{\numberline {8.0.3}动态：树状数组套平衡树}{40}{subsubsection.8.0.3}
-\contentsline {section}{\numberline {9}平衡树}{44}{section.9}
-\contentsline {subsection}{\numberline {9.1}Treap}{44}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Splay}{46}{subsection.9.2}
-\contentsline {section}{\numberline {10}动态树}{49}{section.10}
-\contentsline {subsection}{\numberline {10.1}Link-cut Tree}{49}{subsection.10.1}
-\contentsline {section}{\numberline {11}字符串}{52}{section.11}
-\contentsline {subsection}{\numberline {11.1}KMP字符串匹配}{52}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}AC自动机}{52}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}后缀数组}{54}{subsection.11.3}
-\contentsline {section}{\numberline {12}Miscellaneous}{57}{section.12}
-\contentsline {subsection}{\numberline {12.1}ST表}{57}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Fenwick Tree}{57}{subsection.12.2}
-\contentsline {subsection}{\numberline {12.3}左偏树}{58}{subsection.12.3}
-\contentsline {section}{\numberline {13}莫队}{61}{section.13}
-\contentsline {subsection}{\numberline {13.1}普通莫队}{61}{subsection.13.1}
-\contentsline {subsection}{\numberline {13.2}带修改莫队}{62}{subsection.13.2}
-\contentsline {section}{\numberline {14}分块相关}{65}{section.14}
-\contentsline {subsection}{\numberline {14.1}分块}{65}{subsection.14.1}
-\contentsline {subsection}{\numberline {14.2}区间众数}{66}{subsection.14.2}
-\contentsline {section}{\numberline {15}多项式}{69}{section.15}
-\contentsline {subsection}{\numberline {15.1}快速傅里叶变换}{69}{subsection.15.1}
-\contentsline {subsection}{\numberline {15.2}快速数论变换}{70}{subsection.15.2}
-\contentsline {section}{\numberline {16}数论}{72}{section.16}
-\contentsline {subsection}{\numberline {16.1}线性求逆元}{72}{subsection.16.1}
-\contentsline {paragraph}{推导}{72}{section*.5}
-\contentsline {subsection}{\numberline {16.2}线性筛}{72}{subsection.16.2}
-\contentsline {subsubsection}{\numberline {16.2.1}求$\varphi (n)$}{72}{subsubsection.16.2.1}
-\contentsline {subsubsection}{\numberline {16.2.2}求$\mu (n)$}{73}{subsubsection.16.2.2}
-\contentsline {subsection}{\numberline {16.3}扩展欧几里得定理}{73}{subsection.16.3}
-\contentsline {subsection}{\numberline {16.4}中国剩余定理}{74}{subsection.16.4}
-\contentsline {subsection}{\numberline {16.5}扩展欧拉定理}{74}{subsection.16.5}
-\contentsline {subsection}{\numberline {16.6}Lucas定理}{75}{subsection.16.6}
+\contentsline {section}{\numberline {3}2-SAT}{14}{section.3}
+\contentsline {paragraph}{[NOI2017]游戏}{14}{section*.2}
+\contentsline {section}{\numberline {4}网络流}{18}{section.4}
+\contentsline {subsection}{\numberline {4.1}最大流}{18}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Dinic}{18}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}最小费用最大流}{19}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}zkw费用流}{19}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Primal Dual}{21}{subsubsection.4.3.2}
+\contentsline {section}{\numberline {5}树}{24}{section.5}
+\contentsline {subsection}{\numberline {5.1}倍增LCA}{24}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}欧拉序列求LCA}{25}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}树链剖分}{26}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}点分治}{27}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}动态点分治}{29}{subsection.5.5}
+\contentsline {paragraph}{[WC2014]紫荆花之恋}{29}{section*.3}
+\contentsline {section}{\numberline {6}单调数据结构}{34}{section.6}
+\contentsline {subsection}{\numberline {6.1}单调队列(滑动窗口)}{34}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}单调栈}{35}{subsection.6.2}
+\contentsline {paragraph}{[JSOI2008] 最大数}{35}{section*.4}
+\contentsline {section}{\numberline {7}线段树}{36}{section.7}
+\contentsline {subsection}{\numberline {7.1}Lazy-Tag}{36}{subsection.7.1}
+\contentsline {paragraph}{Solution:}{36}{section*.5}
+\contentsline {subsection}{\numberline {7.2}动态开点线段树}{39}{subsection.7.2}
+\contentsline {paragraph}{[P3380]二逼平衡树}{39}{section*.6}
+\contentsline {subsection}{\numberline {7.3}可持久化线段树}{42}{subsection.7.3}
+\contentsline {section}{\numberline {8}离线二维数点}{44}{section.8}
+\contentsline {subsection}{\numberline {8.1}带修改}{44}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}静态：线段树+扫描线}{44}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}动态：CDQ分治}{44}{subsubsection.8.1.2}
+\contentsline {section}{\numberline {9}在线二维数点}{46}{section.9}
+\contentsline {subsubsection}{\numberline {9.0.1}动态：二维线段树}{46}{subsubsection.9.0.1}
+\contentsline {subsubsection}{\numberline {9.0.2}动态：树状数组套动态开点线段树}{46}{subsubsection.9.0.2}
+\contentsline {subsubsection}{\numberline {9.0.3}动态：树状数组套平衡树}{46}{subsubsection.9.0.3}
+\contentsline {section}{\numberline {10}平衡树}{50}{section.10}
+\contentsline {subsection}{\numberline {10.1}Treap}{50}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Splay}{52}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}可持久化平衡树}{54}{subsection.10.3}
+\contentsline {section}{\numberline {11}动态树}{58}{section.11}
+\contentsline {subsection}{\numberline {11.1}Link-cut Tree}{58}{subsection.11.1}
+\contentsline {section}{\numberline {12}字符串}{61}{section.12}
+\contentsline {subsection}{\numberline {12.1}KMP字符串匹配}{61}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Manacher}{61}{subsection.12.2}
+\contentsline {subsection}{\numberline {12.3}AC自动机}{62}{subsection.12.3}
+\contentsline {subsection}{\numberline {12.4}后缀数组}{64}{subsection.12.4}
+\contentsline {section}{\numberline {13}Miscellaneous}{66}{section.13}
+\contentsline {subsection}{\numberline {13.1}ST表}{66}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}Fenwick Tree}{66}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.3}左偏树}{67}{subsection.13.3}
+\contentsline {subsection}{\numberline {13.4}数位DP}{69}{subsection.13.4}
+\contentsline {paragraph}{[ZJOI2010]数字计数}{69}{lstlisting.-34}
+\contentsline {section}{\numberline {14}莫队}{72}{section.14}
+\contentsline {subsection}{\numberline {14.1}普通莫队}{72}{subsection.14.1}
+\contentsline {subsection}{\numberline {14.2}带修改莫队}{73}{subsection.14.2}
+\contentsline {section}{\numberline {15}分块相关}{76}{section.15}
+\contentsline {subsection}{\numberline {15.1}分块}{76}{subsection.15.1}
+\contentsline {subsection}{\numberline {15.2}区间众数}{77}{subsection.15.2}
+\contentsline {section}{\numberline {16}线性代数}{80}{section.16}
+\contentsline {subsection}{\numberline {16.1}高斯消元}{80}{subsection.16.1}
+\contentsline {subsection}{\numberline {16.2}线性基}{80}{subsection.16.2}
+\contentsline {section}{\numberline {17}多项式}{81}{section.17}
+\contentsline {subsection}{\numberline {17.1}快速傅里叶变换}{81}{subsection.17.1}
+\contentsline {subsection}{\numberline {17.2}快速数论变换}{82}{subsection.17.2}
+\contentsline {subsection}{\numberline {17.3}多项式算法大全}{84}{subsection.17.3}
+\contentsline {section}{\numberline {18}数论}{88}{section.18}
+\contentsline {subsection}{\numberline {18.1}线性求逆元}{88}{subsection.18.1}
+\contentsline {paragraph}{推导}{88}{section*.8}
+\contentsline {subsection}{\numberline {18.2}线性筛}{88}{subsection.18.2}
+\contentsline {subsubsection}{\numberline {18.2.1}求$\varphi (n)$}{88}{subsubsection.18.2.1}
+\contentsline {subsubsection}{\numberline {18.2.2}求$\mu (n)$}{89}{subsubsection.18.2.2}
+\contentsline {subsubsection}{\numberline {18.2.3}求\(\sigma (n)\)}{89}{subsubsection.18.2.3}
+\contentsline {subsection}{\numberline {18.3}扩展欧几里得定理}{90}{subsection.18.3}
+\contentsline {subsection}{\numberline {18.4}中国剩余定理}{90}{subsection.18.4}
+\contentsline {subsection}{\numberline {18.5}扩展欧拉定理}{90}{subsection.18.5}
+\contentsline {subsection}{\numberline {18.6}Lucas定理}{91}{subsection.18.6}
+\contentsline {subsection}{\numberline {18.7}大步小步算法}{92}{subsection.18.7}

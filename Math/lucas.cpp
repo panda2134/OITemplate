@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
-using std::cin;
-using std::cout;
+using namespace std;
 
 typedef long long int64;
 const int MAXN = 1e5;
@@ -37,8 +36,7 @@ void init_inv() {
 int main() {
     cin >> T;
     while(T--) {
-        cin >> n >> m >> p;
-        init_inv();
+        cin >> n >> m >> p; init_inv();
         cout << lucas(n+m, m) << '\n';
     }
     return 0;
